@@ -1,0 +1,133 @@
+
+/* css variables for easy use */
+html {
+  --text-color: #19191a;
+  --background: #ffffff;
+  --grey: #c3c7d0;
+  --main-font: "Inconsolata", sans-serif;
+  --header-font: "Karla", sans-serif;
+}
+
+
+article h1 {
+  font-family: var(--header-font);
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+mark {
+  background: rgb(131,58,180);
+    background: linear-gradient(90deg,       rgba(131,58,180,1) 0%, rgba(253,29,29,1) 48%, rgba(252,176,69,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+article p {
+  font-family: var(--main-font);
+  letter-spacing: 0.03rem;
+  font-size: 1.2rem;
+}
+
+article a {
+  width: 12rem;
+  text-align: center;
+  color: var(--text-color);
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-right: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s ease;
+}
+
+article a.github {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #07078d, #9631c9) border-box;
+  border-radius: 15px;
+  border: 3px solid transparent;
+}
+
+article a.linkedin {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #c9d515, #006eff) border-box;
+  border-radius: 15px;
+  border: 2.5px solid transparent;
+}
+
+article a.github:hover {
+  box-shadow: rgb(83, 27, 152, 0.4) 5px 5px, rgb(83, 27, 152, 0.3) 10px 10px, rgb(83, 27, 152, 0.2) 15px 15px, rgb(83, 27, 152, 0.1) 20px 20px;
+  /* transition: 0.3s */
+}
+
+article a.linkedin:hover {
+  box-shadow: rgb(38, 106, 242, 0.4) 5px 5px, rgb(38, 106, 242, 0.3) 10px 10px, rgb(38, 106, 242, 0.2) 15px 15px, rgb(38, 106, 242, 0.1) 20px 20px;
+  /* transition: 0.3s */
+}
+
+article div {
+  display: flex;
+  flex-direction: row;
+}
+
+section img {
+  width: 22rem;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: box-shadow 0.2s ease;
+}
+
+section img:hover {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+article {
+  width: 40rem;
+  height: 100%;
+  padding-top: 4%;
+}
+
+section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+
+@media (max-width: 1110px) {
+
+  section img {
+    width: 30%;
+  }
+  
+}
+
+@media (max-width: 1000px) {
+
+  section article {
+    width: 30rem;
+  }
+  
+  section img {
+    width: 40%;
+  }
+  
+}
+
+@media (max-width: 900px) {
+
+  section img {
+    margin-top: 4rem;
+    width: 80%;
+  }
+
+  section article {
+    width: 90%;
+  }
+  
+  
+}

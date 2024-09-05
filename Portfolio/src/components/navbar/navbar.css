@@ -1,0 +1,166 @@
+@import URL("App.css");
+
+/* relevant imports */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+/* default settings for css */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* VARIABLES FOR COLOR AND FONT (note: use HTML instead of :root b/c React) */
+html {
+  --text-color: #19191a;
+  --background: #ffffff;
+  --grey: #c3c7d0;
+  --main-font: "Inconsolata", sans-serif;
+  --header-font: "Karla", sans-serif;
+}
+
+
+/* Flexbox for navbar and relevant positioning */
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky !important;
+  top: 0;
+  background-color: #fff;
+  height: 5.6rem;
+}
+
+nav ul {
+  display: flex;
+  height: 1.9rem;
+}
+
+nav li {
+  padding: 2rem;
+  padding-bottom: 0.8rem;
+}
+
+/* styling for links in navbar */
+nav li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: var(--header-font);
+}
+
+nav li a:link {
+  color: var(--text-color);
+  transition: 0.5s;
+}
+
+nav li a.navLink1:hover {
+  background: rgb(48,24,194);
+  background: linear-gradient(90deg, rgba(48,24,194,1) 9%, rgba(106,19,180,1) 50%, rgba(219,17,111,1) 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+nav li a.navLink2:hover {
+  background: rgb(61,72,221);
+  background: linear-gradient(90deg, rgba(61,72,221,1) 0%, rgba(39,182,32,1) 70%, rgba(23,201,21,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+nav li a.navLink3:hover {
+  background: rgb(201,21,21);
+  background: linear-gradient(90deg, rgba(201,21,21,1) 0%, rgba(214,121,24,1) 22%, rgba(219,17,108,1) 37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+nav li a:visited {
+  color: var(--text-color);
+}
+
+nav .logo {
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  font-weight: 450;
+}
+
+
+nav .logo:hover {
+  background: rgb(128,21,201);
+  background: linear-gradient(90deg, rgba(128,21,201,1) 9%, rgba(213,24,214,1) 50%, rgba(219,17,108,1) 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* styling for 3-bar menu for small screen sizes */
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 2.2rem;
+  right: 1.6rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.3rem;
+}
+
+/* Adjustments for small screen sizes (phones, tablets, etc) */
+
+@media (max-width: 820px) {
+  nav .menu {
+    display: none;
+    display: flex;
+    cursor: pointer;
+  } 
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--grey);
+  }
+
+  nav .logo {
+    display: none;
+    padding-bottom: 1rem;
+    color: #fff;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.2rem;
+  }
+
+  nav ul li a {
+    padding: 0.1rem;
+    text-align: center;
+    color: #fff !important;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+}

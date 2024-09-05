@@ -1,0 +1,139 @@
+/* css variables for easy use */
+html {
+  --text-color: #19191a;
+  --background: #ffffff;
+  --grey: #c3c7d0;
+  --main-font: "Inconsolata", sans-serif;
+  --header-font: "Karla", sans-serif;
+}
+
+
+.contact-container .contact-text {
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-family: var(--header-font);
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.contact-container p {
+  font-family: var(--main-font);
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.contact-container img {
+  width: 90px;
+  height: 90px;
+}
+
+.contact-container .github-logo {
+  width: 68px;
+  height: 68px;
+  margin-left: 0.8rem;
+}
+
+.github-title {
+  margin-left: 1.5rem;
+}
+
+
+.contact-container a {
+  margin:0;
+  padding: 2rem;
+  padding-left: 0;
+  box-shadow: none;
+  width: auto;
+}
+
+.contact-container a:hover {
+  font-weight: bold;
+}
+
+.contact-container h2 {
+  font-family: var(--header-font);
+  font-weight: 500;
+}
+
+.contact-container article div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+.contact-container article {
+  display: flex;
+  flex-direction: row;
+  width: 30rem;
+  text-align: left;
+}
+
+.contact-container .contact-wrap {
+  width: 80rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap !important;
+}
+
+.contact-container {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 1000px) {
+
+  .contact-wrap {
+    width: 20rem;
+    display: block !important;
+    margin-left: 12vw !important;
+  }
+
+  .contact-container article {
+    width: 10rem
+  }
+}
+
+
+.contact-gmail:hover {
+  background: rgb(194,24,49);
+  background: linear-gradient(90deg, rgba(194,24,49,1) 9%, rgba(18,69,180,1) 49%, rgba(16,168,25,1) 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: 0.5s;
+  z-index:10;
+}
+
+.contact-linkedin:hover {
+  background: rgb(192,194,24);
+  background: linear-gradient(90deg, rgba(192,194,24,1) 9%, rgba(18,69,180,1) 63%, rgba(16,140,230,1) 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+}
+
+.contact-github:hover {
+  background: rgb(91,24,194);
+  background: linear-gradient(90deg, rgba(91,24,194,1) 9%, rgba(183,24,215,1) 57%, rgba(230,16,195,1) 91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+}
+
+.img-link {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left;
+  width: auto;
+}
+
+.img-link:hover {
+    transform: scale(1.2);
+}
