@@ -29,6 +29,7 @@ nav {
   height: 5.6rem;
 }
 
+/* adjust appearance of nav links */
 nav ul {
   display: flex;
   height: 1.9rem;
@@ -103,7 +104,6 @@ nav .logo:hover {
 }
 
 /* styling for 3-bar menu for small screen sizes */
-
 nav .menu {
   display: none;
   position: absolute;
