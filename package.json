@@ -1,4 +1,5 @@
 {
+  "homepage": "http://emmaadams05.github.io/Portfolio"
   "name": "react-javascript",
   "version": "1.0.0",
   "type": "module",
@@ -15,6 +16,7 @@
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.2.2",
